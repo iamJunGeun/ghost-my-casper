@@ -23,11 +23,15 @@
     {{!-- Set font settings to noto-sans-kr --}}
     {{> font}}
 
+    {{!-- Overwritting navigation template --}}
+    {{> navigation}}
+
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
 </head>
 <body class="{{body_class}}">
+    {{> social-networks}}
 
     <div class="site-wrapper">
 
