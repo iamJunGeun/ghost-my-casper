@@ -34,6 +34,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
+	font-size: 1.7rem;
 	overflow: auto;
 }
 
@@ -236,6 +237,7 @@ pre[class*="language-"].line-numbers > code {
 		}
 
 div.code-toolbar {
+	width: 100%;
 	position: relative;
 }
 
