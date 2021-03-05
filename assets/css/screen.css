@@ -2098,14 +2098,18 @@ Usage (In Ghost editor):
 }
 
 .post-full-content figure {
-    margin: 0.8em 0 2.3em;
+    margin: 0.2em 0 0.2em;
 }
 
 .post-full-content h1 + figure,
 .post-full-content h2 + figure,
 .post-full-content h3 + figure,
 .post-full-content h4 + figure {
-    margin-top: 2em;
+    margin-top: .5em;
+}
+
+.post-full-content p + figure {
+    margin-top: 1.5em;
 }
 
 .post-full-content figure img {
