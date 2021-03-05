@@ -11,6 +11,8 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.2/tocbot.css" integrity="sha512-2kqK5bWDwdrluTn6Wkj+jgiwyzvAHLirVp08Kz7kN5I8PWQ0tUtEMxfhyWDCrnws91BJ9PfrUy6ImfA7Qb22TA==" crossorigin="anonymous" />
+
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
@@ -142,6 +144,15 @@
         });
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.2/tocbot.min.js" integrity="sha512-8u1QblAcGUuhEv26YgTYO3+OtPL7l37qiYoPQtahVTaiLn/H3Z/K16TOXJ3U7PDYBiJWCWKM0a+ELUDGDgED2Q==" crossorigin="anonymous"></script>
+    <script>
+        tocbot.init({
+            tocSelector: '.toc',
+            contentSelector: '.post-content',
+            hasInnerContainers: true
+        });
+    </script>
+
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
 
@@ -150,6 +161,5 @@
     <script>
         var disqus_shortname = "ingniya"
     </script>
-
 </body>
 </html>
