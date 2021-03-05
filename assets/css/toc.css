@@ -7,8 +7,11 @@ body {
 }
 .post-full-content {
     display: grid;
-    grid-template-columns: 1fr 0.2fr;
-    padding: 0 0 6vw;
+    grid-template-columns: 1fr 0.1fr;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 6vw;
+    /* padding: 0 0 6vw; */
     margin: 0;
 }
 .toc-container {
