@@ -398,21 +398,35 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0;
 }
 
-.nav li a {
+.nav a {
     position: relative;
     display: block;
     padding: 12px 12px;
+    margin: 0;
     color: #fff;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
 }
+/* 
+.nav a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: 12px 12px;
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.35s ease-in-out;
+} */
 
-.nav li a:hover {
+/* .nav li a:hover, */
+.nav a:hover {
     text-decoration: none;
     opacity: 1;
 }
 
-.nav li a:before {
+/* .nav li a:before, */
+.nav a::before {
     content: "";
     position: absolute;
     right: 100%;
@@ -424,7 +438,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     transition: all 0.35s ease-in-out;
 }
 
-.nav li a:hover:before {
+/* .nav li a:hover:before, */
+.nav a:hover::before {
     right: 12px;
     opacity: 0.5;
 }
@@ -495,21 +510,44 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
 }
 
-.social-link {
+.social-link,
+.rss-button,
+.btn {
     display: inline-block;
     margin: 0;
     padding: 10px;
     opacity: 0.8;
 }
 
-.social-link:hover {
+.social-link:hover,
+.rss-button:hover,
+.btn:hover {
     opacity: 1.0;
 }
 
-.social-link svg {
+.social-link svg,
+.rss-button svg,
+.btn img {
     height: 1.8rem;
     fill: #fff;
 }
+
+/* 
+.rss-button {
+    padding: 10px 8px;
+    opacity: 0.8;
+}
+
+.rss-button:hover {
+    opacity: 1;
+}
+
+.rss-button svg {
+    margin-bottom: 1px;
+    height: 2.1rem;
+    fill: #fff;
+} */
+
 
 .social-link-fb svg {
     height: 1.6rem;
@@ -545,21 +583,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-right .nav + .subscribe-button {
     margin-left: 24px;
-}
-
-.rss-button {
-    padding: 10px 8px;
-    opacity: 0.8;
-}
-
-.rss-button:hover {
-    opacity: 1;
-}
-
-.rss-button svg {
-    margin-bottom: 1px;
-    height: 2.1rem;
-    fill: #fff;
 }
 
 /* Special behaviors for home navigation */

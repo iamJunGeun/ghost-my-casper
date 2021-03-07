@@ -1,16 +1,19 @@
 <figure class="kg-card kg-code-card">
-
     {{#if isSecondary}}
         <ul class="nav">
             {{#foreach navigation}}
-                <li class="nav-{{slug}}">
+                {{!-- <li class="nav-{{slug}}"> --}}
                     <a href="{{url}}" class="social-link">
-                        <svg width="16" height="16" role="img" aria-label="{{slug}} icon">
+                        <svg  width="16" height="16" role="img" aria-label="{{slug}} icon">
                             <use xlink:href="#{{slug}}"></use>
                         </svg>
                     </a>
-                </li>
+                {{!-- </li> --}}
             {{/foreach}}
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            <a href="#" class="btn" >
+                <img width="16" height="16" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi41NDIgNTEyLjU0MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDgxLjI4LDM3Ni45NjFsLTcxLjY4LTUzLjc2YzE3LjkyLTMwLjcyLDI1LjYtNjYuNTYsMjUuNi0xMDQuOTZjMC0xMjAuMzItOTcuMjgtMjE3LjYtMjE3LjYtMjE3LjZTMCw5Ny45MjEsMCwyMTguMjQgICAgczk3LjI4LDIxNy42LDIxNy42LDIxNy42YzM4LjQsMCw3MS42OC0xMC4yNCwxMDQuOTYtMjUuNmw1My43Niw3MS42OGMyOC4xNiwzNS44NCw4MS45Miw0MC45NiwxMTUuMiw3LjY4ICAgIEM1MjIuMjQsNDU4Ljg4LDUxOS42OCw0MDUuMTIsNDgxLjI4LDM3Ni45NjF6IE0yMTcuNiwzODQuNjQxYy05Mi4xNiwwLTE2Ni40LTc0LjI0LTE2Ni40LTE2Ni40czc0LjI0LTE2Ni40LDE2Ni40LTE2Ni40ICAgIFMzODQsMTI2LjA4MSwzODQsMjE4LjI0UzMwOS43NiwzODQuNjQxLDIxNy42LDM4NC42NDF6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+            </a>
         </ul>
     {{else}}
         <ul class="nav">
