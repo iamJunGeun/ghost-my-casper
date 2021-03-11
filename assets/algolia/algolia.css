@@ -133,10 +133,11 @@
 .ais-hits--item {
     height:auto;
     background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
     /* margin-top: 5px; */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .hit {
@@ -148,6 +149,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 0;
+}
+
+.hit-content .hit-preview {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .hit-image {
@@ -175,7 +184,7 @@
   display: block;
   font-size: 14px;
   font-weight: normal;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .ais-refinement-list--item {
