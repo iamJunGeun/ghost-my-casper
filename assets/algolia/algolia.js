@@ -5,18 +5,17 @@ function hitTemplate(hit) {
     return `
       <div class="hit">
         <div class="hit-content">
-            <div class="hit-name">
-                <a href="${hit._highlightResult.url.value}">${hit._highlightResult.title.value}</a>
-            </div>            
+          <a class="hit-name" href="${hit.url}">${hit.title}</a>
+          <p class="hit-preview">${hit.preview}</p>
         </div>
       </div>
     `;
   }
 
 const search = instantsearch({
-  appId: "SU1SMVVTDL",
-  apiKey: "70dd150abf3c3445e210eb1a49b068ec",
-  indexName: "ghost",
+  appId: "07AC6NKDJ8",
+  apiKey: "4447489a4349e9a350c1ac11162a3b6f",
+  indexName: "Ghost blog",
   searchParameters: {
     attributesToSnippet: ["description:24"],
     snippetEllipsisText: " [...]"
