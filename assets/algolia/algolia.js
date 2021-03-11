@@ -15,7 +15,7 @@ function hitTemplate(hit) {
 const search = instantsearch({
   appId: "07AC6NKDJ8",
   apiKey: "4447489a4349e9a350c1ac11162a3b6f",
-  indexName: "Ghost blog",
+  indexName: "ghost_blog",
   searchParameters: {
     attributesToSnippet: ["description:24"],
     snippetEllipsisText: " [...]"
