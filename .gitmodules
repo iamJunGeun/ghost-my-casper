@@ -1,0 +1,3 @@
+[submodule "assets/ghostHunter"]
+	path = assets/ghostHunter
+	url = https://juni-test@github.com/juni-test/ghostHunter.git
