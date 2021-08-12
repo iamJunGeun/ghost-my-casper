@@ -40,6 +40,14 @@
 
         </a>
 
+        <section class="post-card-tags">
+            {{#foreach tags}}
+                <a class="post-card-tag" href='{{url}}'>
+                    #{{name}}
+                </a>
+            {{/foreach}}
+        </section>
+
         <footer class="post-card-meta">
             <ul class="author-list">
                 {{#foreach authors}}
