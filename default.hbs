@@ -162,13 +162,6 @@
     </script>
 
     <script type="text/javascript" src="{{asset "js/search-modal.js"}}"></script>
-    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
-    <script>
-        $("#search-field").ghostHunter({
-           results: "#results",
-           onKeyUp: true
-        });
-    </script>
 
     {{> algolia}}
     {{!-- <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js"></script>
@@ -182,8 +175,5 @@
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
-    <script>
-        var disqus_shortname = "ingniya"
-    </script>
 </body>
 </html>
